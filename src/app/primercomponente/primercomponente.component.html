@@ -1,0 +1,18 @@
+<p>primercomponente works!</p>
+<p>Esto es un número: {{variable}}</p>
+<p>Esto es una cadena: {{varibleCadena}}</p>
+<p>Esto es un array: {{variableArray}}</p>
+<p>Persona: {{varPersona.nombre}}</p>
+<p>&emsp;{{varPersona.apellidos}}</p>
+<p>&emsp;{{varPersona.edad}}</p>
+<p>Persona: {{varCPersona.nombre}}</p>
+<p>&emsp;{{varCPersona.apellidos}}</p>
+<p>&emsp;{{varCPersona.edad}}</p>
+
+<p>Funcion ver nombre: {{verNombre()}}</p>
+
+<input value="{{varCPersona.nombre}}"(change)="cambiarNombre($event.target.value)">
+<input value="{{varCPersona.apellidos}}"(change)="cambiarApellido($event.target.value)"><br>
+
+Directiva ngModel
+<input [(ngModel)]="varCPersona.nombre">
