@@ -1,1 +1,14 @@
-<p>segundocomponente works!</p>
+<div>Directivas estructurales:</div>
+<p *ngIf="variableBooleana">segundocomponente works!</p>
+<div [ngSwitch]="varNumero">
+  <p *ngSwitchCase="0">Se está mostrando el elemento 0</p>
+  <p *ngSwitchCase="1">Se está mostrando el elemento 1</p>
+  <p *ngSwitchDefault>Se está mostrando el elemento por defecto</p>
+</div>
+
+Directiva for:
+<p *ngFor="let posicion of varArray">{{posicion}}</p>
+
+Directivas de atributo:
+<p style="color: #ff1ce4;">Elemento de color rojo</p>
+<p [ngStyle]="{color: 'red'}">Elemento de color rojo a través de directiva</p>

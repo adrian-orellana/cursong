@@ -9,6 +9,10 @@ import { TercercomponenteComponent } from './tercercomponente/tercercomponente.c
 import { CuartocomponenteComponent } from './cuartocomponente/cuartocomponente.component';
 import { CuartounocomponenteComponent } from './cuartounocomponente/cuartounocomponente.component';
 import {FormsModule} from '@angular/forms';
+import { ObscomponentComponent } from './obscomponent/obscomponent.component';
+import {MatIconModule, MatMenuModule, MatSidenavModule, MatToolbarModule} from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { FormularioComponent } from './formulario/formulario.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +21,19 @@ import {FormsModule} from '@angular/forms';
     SegundocomponenteComponent,
     TercercomponenteComponent,
     CuartocomponenteComponent,
-    CuartounocomponenteComponent
+    CuartounocomponenteComponent,
+    ObscomponentComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    MatMenuModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatIconModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

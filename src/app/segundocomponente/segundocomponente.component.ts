@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SegundocomponenteComponent implements OnInit {
 
+  variableBooleana = true;
+  varNumero = 5;
+  varArray: number[];
+
+
   constructor() { }
 
   ngOnInit() {
+    this.varArray = [3, 4, 5];
   }
 
 }

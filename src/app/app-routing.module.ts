@@ -5,13 +5,17 @@ import {SegundocomponenteComponent} from './segundocomponente/segundocomponente.
 import {TercercomponenteComponent} from './tercercomponente/tercercomponente.component';
 import {CuartocomponenteComponent} from './cuartocomponente/cuartocomponente.component';
 import {CuartounocomponenteComponent} from './cuartounocomponente/cuartounocomponente.component';
+import {ObscomponentComponent} from './obscomponent/obscomponent.component';
+import {FormularioComponent} from './formulario/formulario.component';
 
 
 const routes: Routes = [
   {path: 'primero', component: PrimercomponenteComponent},
   {path: 'segundo', component: SegundocomponenteComponent},
   {path: 'tercer', component: TercercomponenteComponent},
-  {path: 'cuarto', component: CuartocomponenteComponent}
+  {path: 'cuarto', component: CuartocomponenteComponent},
+  {path: 'obs', component: ObscomponentComponent},
+  {path: 'formulario', component: FormularioComponent}
 ];
 
 @NgModule({
