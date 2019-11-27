@@ -6,7 +6,7 @@ import {TercercomponenteComponent} from './tercercomponente/tercercomponente.com
 import {CuartocomponenteComponent} from './cuartocomponente/cuartocomponente.component';
 import {CuartounocomponenteComponent} from './cuartounocomponente/cuartounocomponente.component';
 import {ObscomponentComponent} from './obscomponent/obscomponent.component';
-import {FormularioComponent} from './formulario/formulario.component';
+import {UsuarioApiComponent} from './usuario-api/usuario-api.component';
 
 
 const routes: Routes = [
@@ -15,7 +15,7 @@ const routes: Routes = [
   {path: 'tercer', component: TercercomponenteComponent},
   {path: 'cuarto', component: CuartocomponenteComponent},
   {path: 'obs', component: ObscomponentComponent},
-  {path: 'formulario', component: FormularioComponent}
+  {path: 'usuario-api', component: UsuarioApiComponent}
 ];
 
 @NgModule({

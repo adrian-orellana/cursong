@@ -12,7 +12,9 @@ import {FormsModule} from '@angular/forms';
 import { ObscomponentComponent } from './obscomponent/obscomponent.component';
 import {MatIconModule, MatMenuModule, MatSidenavModule, MatToolbarModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { FormularioComponent } from './formulario/formulario.component';
+import {HttpClientModule} from '@angular/common/http';
+import { UsuarioApiComponent } from './usuario-api/usuario-api.component';
+import {UsuarioApiService} from './Services/usuario-api.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,7 @@ import { FormularioComponent } from './formulario/formulario.component';
     CuartocomponenteComponent,
     CuartounocomponenteComponent,
     ObscomponentComponent,
-    FormularioComponent
+    UsuarioApiComponent
   ],
   imports: [
     BrowserModule,
@@ -33,9 +35,12 @@ import { FormularioComponent } from './formulario/formulario.component';
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
+    HttpClientModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    UsuarioApiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
